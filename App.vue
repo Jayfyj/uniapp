@@ -1,7 +1,8 @@
 <script>
 	export default {
 		onLaunch: function() {
-			console.log(process.env.NODE_ENV)
+			const baseUrl =  process.uniEnv.baseENV
+			console.log(baseUrl)
 			console.log('App Launch')
 		},
 		onShow: function() {

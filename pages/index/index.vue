@@ -15,7 +15,7 @@
 
 <script>
 import{ mapState, mapMutations} from 'vuex'
-
+// import { orderBy } from 'lodash-es'
 export default {
 	data() {
 		return {
@@ -23,6 +23,7 @@ export default {
 		}
 	},
 	onLoad() {
+		// console.log(this.$moment(new Date()).format('yyyy'))
 	},
 	methods: {
 
