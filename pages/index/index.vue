@@ -8,24 +8,29 @@
 			<u--text type="success" text="成功"></u--text>
 			<u--text type="warning" text="警告"></u--text>
 			<u--text type="info"    text="信息"></u--text>
+			<u--text type="info"    :text="a"></u--text>
 		</view>
 	</view>
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				title: 'Hello'
-			}
-		},
-		onLoad() {
+import{ mapState, mapMutations} from 'vuex'
 
-		},
-		methods: {
-
+export default {
+	data() {
+		return {
+			title: 'Hello'
 		}
+	},
+	onLoad() {
+	},
+	methods: {
+
+	},
+	computed:{
+		...mapState('test',["a"])
 	}
+}
 </script>
 
 <style>
